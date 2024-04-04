@@ -68,12 +68,14 @@ or(carry,w2,w3,w4);
 endmodule
 ```
 **Full Subractor**
+```
 module fullsub_top(a,b,Bin,BO,DIFF);
 input a,b,Bin;
 output BO,DIFF;
 assign DIFF = a ^ b ^ Bin;
   assign BO = (a & b) | ((a ^ b) & Bin);
 endmodule
+```
 **RTL Schematic**
 ![image](https://github.com/SJananisenthilkumar/FULL_ADDER_SUBTRACTOR/assets/144871139/c6ef190a-d28d-4e35-8e6f-6e3605e6a7f3)
 **Full Subractor**
